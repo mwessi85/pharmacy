@@ -1,0 +1,439 @@
+/*************************************
+ * TITLE: Sinorca Screen Stylesheet  *
+ * URI  : sinorca/sinorca-screen.css *
+ * MODIF: 2003-Apr-30 19:31 +0800    *
+ *************************************/
+
+
+/* ##### Common Styles ##### */
+
+body {
+  color: black;
+  background-color: rgb(240,240,240);
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 100%;  /* Enables font size scaling in MSIE */
+  margin: 0;
+  padding: 0;
+}
+
+html > body {
+  font-size: 10pt;
+}
+
+acronym, .titleTip {
+  border-bottom: 1px dotted rgb(153,153,153);
+  cursor: help;
+  margin: 0;
+  padding: 0 0 0.4px 0;
+}
+.smallCaps {
+  font-size: 110%;
+  font-variant: small-caps;
+}
+
+.superHeader {
+  background-color: rgb(100,135,220);
+
+}
+
+.midHeader {
+  color: rgb(39,78,144);
+  background-color: rgb(140,170,230);
+}
+
+.headerTitle {
+  font-size: 337%;
+  font-weight: normal;
+  margin: 0 0 0 4mm;
+  padding: 0.25ex 0;
+}
+
+.subHeader {
+  color: white;
+  background-color: rgb(0,51,153);
+  margin: 0;
+  padding: 1ex 1ex 1ex 1.5mm;
+  text-align:right;
+}
+
+.subHeader a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0.75ex 0 0.5ex;
+}  
+
+.subHeader a:hover {
+  text-decoration: underline;
+}
+
+.superHeader .highlight, .subHeader .highlight {
+  color: rgb(253,160,91);
+  background-color: transparent;
+}
+
+
+/* ##### Side Bar ##### */
+
+#side-bar {
+  width: 14em;
+  float: left;
+  clear: left;
+  border-right: 1px;
+  height: 450px;
+}
+
+#side-bar div {
+  border-bottom: 1px;
+}
+
+.sideBarTitle {
+  font-weight: bold;
+  margin: 0 0 0.5em 2.0mm;
+  padding: 1em 0 0 0;
+}
+
+#side-bar ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0 0 1.1em 0;
+}
+
+#side-bar li {
+  margin: 0;
+  padding: 0.1ex 0;  /* Circumvents a rendering bug (?) in MSIE 6.0 */
+}
+
+#side-bar a, .thisPage {
+  color: rgb(0,102,204);
+  background-color: transparent;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.75em 1ex 0.75em 4mm;
+  display: block;
+}
+
+.thisPage {
+  color: black;
+  background-color: white;
+  padding-left: 4mm;
+  border-top: 1px solid rgb(153,153,153);
+  border-bottom: 1px solid rgb(153,153,153);
+}
+
+#side-bar a:hover {
+  color: white;
+  background-color: rgb(100,135,220);
+  text-decoration: none;
+}
+
+.sideBarText {
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+  padding: 0 1.5ex 0 2.5mm;
+  display: block;
+}
+
+#side-bar .sideBarText a {
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+#side-bar .sideBarText a:hover {
+  color: rgb(0,102,204);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.lighterBackground {
+  color: inherit;
+  background-color: white;
+}
+
+
+/* ##### Main Copy ##### */
+
+#main-copy {
+  color: black;
+  background-color: white;
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 15px;
+  margin-left: 190px;
+  height: 555px;
+  padding: 15px;
+  border-left: 15px;
+}
+
+#main-copy p {
+  margin: 1em 1ex 2em 1ex;
+  padding: 0;
+}
+p {
+	margin-left:20px;
+	font-size:0.9em;
+	line-height:0.em;
+}
+p.error {
+    background-color: #FBE3E4;
+    border: 1px solid #FBC2C4;
+    color: #D12F19
+}
+.warning {
+    background-color: #FFFF99;
+    border: 1px solid #FFFF33;
+}
+.notification {
+    background-color: #B5FFB1;
+    border: 1px solid #87FF69;
+}
+
+#main-copy a {
+  color: rgb(0,102,204);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#main-copy a:hover {
+  text-decoration: none;
+}
+
+#main-copy h1 {
+  color: white;
+  background-color: rgb(100,135,220);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 3em 0 0 0;
+  padding: 0.5ex 0 0.5ex 1ex;
+}
+
+#main-copy .topOfPage {
+  color: white;
+  background-color: transparent;
+  font-size: 91%;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 2.5ex 1ex 0 0;  /* For MSIE */
+  padding: 0;
+  float: right;
+}
+
+#main-copy > .topOfPage {
+  margin: 2.75ex 1ex 0 0;  /* For fully standards-compliant user agents */
+}
+
+dl {
+  margin: 1em 1ex 2em 1ex;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 2em 2em;
+  padding: 0;
+}
+
+
+/* ##### Footer ##### */
+
+#footer {
+  color: white;
+  background-color: rgb(100,135,220);
+  font-size: 91%;
+  margin: 0;
+  padding: 1em 2.5mm 2.5ex 2.5mm;
+  clear: both;
+}
+
+#footer .left {
+  line-height: 1.45em;
+  float: left;
+  clear: left;
+}
+
+#footer .right {
+  text-align: right;
+  line-height: 1.45em;
+}
+
+#footer a {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}
+/*form styles*/
+.form{
+	float:left;
+	width: 300px;
+	height: 200px;
+}
+.feedback{
+	float:right;
+	width: 450px;
+}
+fieldset {
+	border: none;
+	background: rgb(237, 228, 214);
+	position: relative;
+	width: 80%;
+	min-width: 300px;
+	padding:1em;
+	margin: 1em 0;
+	-webkit-border-radius: 0 .5em .5em 0;
+	-moz-border-radius: 0 .5em .5em 0;
+	border-radius: 0 .5em .5em 0;
+}
+
+fieldset:before {
+	content:attr(title);
+	display: block;
+	font: 1.2em Cantarell, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	border-bottom: 1px solid rgb(76, 67, 65);
+	width: 80%;
+}
+
+legend {
+	position: absolute;
+	top:0;
+	left: -2000em;
+}
+
+fieldset p {
+	font: .8em Cantarell, Arial, Helvetica, sans-serif;
+	margin: 1em 0 0;
+	font-style: italic;
+}
+
+label {
+	display:block;
+	font-size: 1em;
+	margin: .8em 0 0;
+}
+
+input[type="search"], input[type="date"], input[type="number"], input[type="password"], input[type="text"], input[type="email"], input[type="url"], textarea {
+	width: 250px;
+}
+
+input[type="submit"] {
+	display:;
+}
+
+.inline {
+	display: inline;
+}
+
+fieldset div {
+	width: 250px;
+}
+fieldset div {
+	width: 250px;
+}
+table.results {
+    border-collapse: collapse;
+	width: 100%;
+}
+
+td.column_head, td.cell_value {
+    font-size: 100%;
+    padding: 0 3px 0 3px;
+	color:#333;
+}
+
+td.column_head {
+    
+	background-color: #999;
+	color:#FFF;
+	font-weight:bold;
+}
+table.results a {
+  color: #FFF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+table.results a:hover {
+  text-decoration: none;
+}
+td {
+    background-color: #fff;
+}
+
+td.cell_value {
+    background-color: #fff;
+}
+table.form {
+	background-color:#fff;
+	background-color: #fff;
+	border: none;
+	padding: 0px;
+	border-collapse: collapse;
+	width: 100%;
+}
+table.form td {
+    background-color: #fff;
+}
+
+table.form td.cell_value {
+    background-color: #EEEEEE;
+}
+td.column_foot {
+    
+	background-color: #FFF;
+	border-top-style:1px;
+	border-top-color:#333;
+	color:#333;
+}
+.out_of_stock {
+	color: #F00;
+	background-color: #eed;
+	font-size: 90%;
+    padding: 0 3px 0 3px;
+    border: 1px solid #ccc;
+}
+.almost_out_of_stock {
+	color: #FC0;
+	background-color: #eed;
+	font-size: 90%;
+    padding: 0 3px 0 3px;
+    border: 1px solid #ccc;
+}
+.expired {
+	color: #F00;
+	background-color: #eed;
+	font-size: 90%;
+    padding: 0 3px 0 3px;
+    border: 1px solid #ccc;
+}
+.almost_expired {
+	color: #F93;
+	background-color: #eed;
+	font-size: 90%;
+    padding: 0 3px 0 3px;
+    border: 1px solid #ccc;
+}
+.notice {
+	width: 300px;
+	color:#0C3;
+}
+#notice{
+	color: green;	
+}
+.even {
+	background-color: #F8F8F8;
+	padding: 0 3px 0 3px;
+}
